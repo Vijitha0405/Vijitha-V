@@ -1,0 +1,4297 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="description"
+
+          content="Academic portfolio of Vijitha V., Mechanical Engineer and M.Tech Energy Engineering graduate from NIT Calicut.">
+
+
+    <meta name="keywords"
+
+          content="Vijitha V, Mechanical Engineer, MTech, Energy Engineering, NIT Calicut, Heat Transfer, CFD, Thermal Engineering">
+
+
+    <meta name="author" content="Vijitha V.">
+
+
+    <title>Vijitha V. | Mechanical Engineer & Researcher</title>
+
+
+
+    <!-- =========================================================
+
+         TAILWIND CSS
+
+         ========================================================= -->
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+
+
+        tailwind.config = {
+
+
+            darkMode: 'class',
+
+
+            theme: {
+
+
+                extend: {
+
+
+                    colors: {
+
+
+                        navy: '#0B1120',
+
+
+                        darkblue: '#111827',
+
+
+                        accent: '#38BDF8',
+
+
+                        cyan: '#22D3EE'
+
+
+                    },
+
+
+                    fontFamily: {
+
+
+                        sans: [
+
+                            'Inter',
+
+                            'ui-sans-serif',
+
+                            'system-ui',
+
+                            'sans-serif'
+
+                        ]
+
+
+                    }
+
+
+                }
+
+
+            }
+
+
+        }
+
+
+    </script>
+
+
+
+    <!-- =========================================================
+
+         GOOGLE FONT
+
+         ========================================================= -->
+
+
+    <link rel="preconnect"
+
+          href="https://fonts.googleapis.com">
+
+
+    <link rel="preconnect"
+
+          href="https://fonts.gstatic.com"
+
+          crossorigin>
+
+
+    <link
+
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+
+        rel="stylesheet">
+
+
+
+    <!-- =========================================================
+
+         CUSTOM CSS
+
+         ========================================================= -->
+
+
+    <style>
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+
+            font-family: 'Inter', sans-serif;
+
+        }
+
+
+        .gradient-text {
+
+
+            background: linear-gradient(
+
+                90deg,
+
+                #38BDF8,
+
+                #22D3EE
+
+            );
+
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+
+            color: transparent;
+
+
+        }
+
+
+        .grid-bg {
+
+
+            background-image:
+
+
+                linear-gradient(
+
+                    rgba(148,163,184,0.06) 1px,
+
+                    transparent 1px
+
+                ),
+
+
+                linear-gradient(
+
+                    90deg,
+
+                    rgba(148,163,184,0.06) 1px,
+
+                    transparent 1px
+
+                );
+
+
+            background-size: 40px 40px;
+
+
+        }
+
+
+        .glass {
+
+
+            background: rgba(255,255,255,0.04);
+
+
+            backdrop-filter: blur(12px);
+
+
+            -webkit-backdrop-filter: blur(12px);
+
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+
+        }
+
+
+        .project-card {
+
+
+            transition:
+
+                transform 0.3s ease,
+
+                border-color 0.3s ease,
+
+                box-shadow 0.3s ease;
+
+
+        }
+
+
+        .project-card:hover {
+
+
+            transform: translateY(-7px);
+
+
+            border-color: rgba(56,189,248,0.5);
+
+
+            box-shadow:
+
+                0 20px 40px rgba(0,0,0,0.15);
+
+
+        }
+
+
+        .nav-link {
+
+
+            position: relative;
+
+
+        }
+
+
+        .nav-link::after {
+
+
+            content: '';
+
+
+            position: absolute;
+
+
+            left: 0;
+
+
+            bottom: -6px;
+
+
+            width: 0;
+
+
+            height: 2px;
+
+
+            background: #38BDF8;
+
+
+            transition: width 0.3s ease;
+
+
+        }
+
+
+        .nav-link:hover::after {
+
+
+            width: 100%;
+
+
+        }
+
+
+        .fade-up {
+
+
+            animation: fadeUp 0.8s ease forwards;
+
+
+        }
+
+
+        @keyframes fadeUp {
+
+
+            from {
+
+
+                opacity: 0;
+
+
+                transform: translateY(20px);
+
+
+            }
+
+
+            to {
+
+
+                opacity: 1;
+
+
+                transform: translateY(0);
+
+
+            }
+
+
+        }
+
+
+    </style>
+
+
+</head>
+
+
+
+
+<body
+
+    class="
+
+        bg-slate-50
+
+        text-slate-900
+
+        dark:bg-navy
+
+        dark:text-slate-100
+
+        transition-colors
+
+        duration-300
+
+    "
+
+>
+
+
+
+<!-- ============================================================
+
+     NAVIGATION
+
+     ============================================================ -->
+
+
+<header class="fixed top-0 left-0 right-0 z-50">
+
+
+    <nav
+
+        class="
+
+            bg-slate-50/90
+
+            dark:bg-navy/90
+
+            backdrop-blur-md
+
+            border-b
+
+            border-slate-200
+
+            dark:border-slate-800
+
+        "
+
+    >
+
+
+        <div
+
+            class="
+
+                max-w-6xl
+
+                mx-auto
+
+                px-6
+
+                py-4
+
+                flex
+
+                items-center
+
+                justify-between
+
+            "
+
+        >
+
+
+            <!-- NAME -->
+
+
+            <a
+
+                href="#home"
+
+                class="
+
+                    text-xl
+
+                    font-bold
+
+                    tracking-tight
+
+                "
+
+            >
+
+
+                Vijitha<span class="text-accent">.</span>
+
+
+            </a>
+
+
+
+            <!-- DESKTOP MENU -->
+
+
+            <div
+
+                class="
+
+                    hidden
+
+                    md:flex
+
+                    items-center
+
+                    gap-8
+
+                    text-sm
+
+                    font-medium
+
+                "
+
+            >
+
+
+                <a
+
+                    href="#about"
+
+                    class="nav-link hover:text-accent transition"
+
+                >
+
+                    About
+
+                </a>
+
+
+                <a
+
+                    href="#research"
+
+                    class="nav-link hover:text-accent transition"
+
+                >
+
+                    Research
+
+                </a>
+
+
+                <a
+
+                    href="#projects"
+
+                    class="nav-link hover:text-accent transition"
+
+                >
+
+                    Projects
+
+                </a>
+
+
+                <a
+
+                    href="#skills"
+
+                    class="nav-link hover:text-accent transition"
+
+                >
+
+                    Skills
+
+                </a>
+
+
+                <a
+
+                    href="#contact"
+
+                    class="nav-link hover:text-accent transition"
+
+                >
+
+                    Contact
+
+                </a>
+
+
+
+                <!-- CV BUTTON -->
+
+
+                <a
+
+                    href="CV.pdf"
+
+                    target="_blank"
+
+                    class="
+
+                        px-4
+
+                        py-2
+
+                        rounded-lg
+
+                        bg-slate-900
+
+                        dark:bg-white
+
+                        text-white
+
+                        dark:text-slate-900
+
+                        hover:opacity-80
+
+                        transition
+
+                    "
+
+                >
+
+                    Academic CV
+
+                </a>
+
+
+
+                <!-- THEME BUTTON -->
+
+
+                <button
+
+                    id="themeToggle"
+
+                    aria-label="Toggle dark mode"
+
+                    class="
+
+                        w-9
+
+                        h-9
+
+                        rounded-lg
+
+                        border
+
+                        border-slate-300
+
+                        dark:border-slate-700
+
+                        flex
+
+                        items-center
+
+                        justify-center
+
+                        hover:bg-slate-200
+
+                        dark:hover:bg-slate-800
+
+                        transition
+
+                    "
+
+                >
+
+                    ☀
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- MOBILE BUTTON -->
+
+
+            <button
+
+                id="mobileMenuButton"
+
+                class="
+
+                    md:hidden
+
+                    text-2xl
+
+                "
+
+                aria-label="Open menu"
+
+            >
+
+                ☰
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- MOBILE MENU -->
+
+
+        <div
+
+            id="mobileMenu"
+
+            class="
+
+                hidden
+
+                md:hidden
+
+                px-6
+
+                pb-5
+
+                border-t
+
+                border-slate-200
+
+                dark:border-slate-800
+
+            "
+
+        >
+
+
+            <div
+
+                class="
+
+                    flex
+
+                    flex-col
+
+                    gap-5
+
+                    pt-5
+
+                    text-sm
+
+                "
+
+            >
+
+
+                <a href="#about">About</a>
+
+
+                <a href="#research">Research</a>
+
+
+                <a href="#projects">Projects</a>
+
+
+                <a href="#skills">Skills</a>
+
+
+                <a href="#contact">Contact</a>
+
+
+                <a
+
+                    href="CV.pdf"
+
+                    target="_blank"
+
+                >
+
+                    Academic CV
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </nav>
+
+
+</header>
+
+
+
+
+<!-- ============================================================
+
+     HERO
+
+     ============================================================ -->
+
+
+<section
+
+    id="home"
+
+    class="
+
+        min-h-screen
+
+        flex
+
+        items-center
+
+        grid-bg
+
+        relative
+
+        overflow-hidden
+
+    "
+
+>
+
+
+    <!-- Decorative background -->
+
+
+    <div
+
+        class="
+
+            absolute
+
+            top-20
+
+            right-10
+
+            w-72
+
+            h-72
+
+            bg-sky-400/10
+
+            rounded-full
+
+            blur-3xl
+
+        "
+
+    ></div>
+
+
+
+    <div
+
+        class="
+
+            absolute
+
+            bottom-10
+
+            left-10
+
+            w-72
+
+            h-72
+
+            bg-cyan-400/10
+
+            rounded-full
+
+            blur-3xl
+
+        "
+
+    ></div>
+
+
+
+    <div
+
+        class="
+
+            max-w-6xl
+
+            mx-auto
+
+            px-6
+
+            pt-32
+
+            pb-20
+
+            w-full
+
+            relative
+
+            z-10
+
+        "
+
+    >
+
+
+        <div
+
+            class="
+
+                max-w-4xl
+
+                fade-up
+
+            "
+
+        >
+
+
+            <!-- SMALL LABEL -->
+
+
+            <p
+
+                class="
+
+                    text-accent
+
+                    font-semibold
+
+                    tracking-widest
+
+                    text-sm
+
+                    mb-6
+
+                "
+
+            >
+
+                MECHANICAL ENGINEERING • RESEARCH • SIMULATION
+
+            </p>
+
+
+
+            <!-- NAME -->
+
+
+            <h1
+
+                class="
+
+                    text-5xl
+
+                    sm:text-6xl
+
+                    md:text-7xl
+
+                    font-extrabold
+
+                    tracking-tight
+
+                "
+
+            >
+
+                Vijitha V.
+
+            </h1>
+
+
+
+            <!-- ROLE -->
+
+
+            <h2
+
+                class="
+
+                    mt-5
+
+                    text-2xl
+
+                    sm:text-3xl
+
+                    md:text-4xl
+
+                    font-bold
+
+                    leading-tight
+
+                "
+
+            >
+
+
+                Mechanical Engineer
+
+
+                <span class="gradient-text">
+
+                    & Researcher
+
+                </span>
+
+
+            </h2>
+
+
+
+            <!-- INTRO -->
+
+
+            <p
+
+                class="
+
+                    mt-7
+
+                    max-w-2xl
+
+                    text-lg
+
+                    leading-8
+
+                    text-slate-600
+
+                    dark:text-slate-400
+
+                "
+
+            >
+
+
+                M.Tech Mechanical Engineering graduate specializing
+
+                in Energy Engineering and Management, with interests
+
+                in heat transfer, thermal systems, CFD, renewable
+
+                energy and advanced mechanical engineering research.
+
+
+            </p>
+
+
+
+            <!-- BUTTONS -->
+
+
+            <div
+
+                class="
+
+                    mt-9
+
+                    flex
+
+                    flex-wrap
+
+                    gap-4
+
+                "
+
+            >
+
+
+                <a
+
+                    href="#research"
+
+                    class="
+
+                        px-6
+
+                        py-3
+
+                        rounded-lg
+
+                        bg-sky-500
+
+                        text-white
+
+                        font-semibold
+
+                        hover:bg-sky-400
+
+                        transition
+
+                        shadow-lg
+
+                        shadow-sky-500/20
+
+                    "
+
+                >
+
+                    Explore My Research
+
+                </a>
+
+
+
+                <a
+
+                    href="CV.pdf"
+
+                    target="_blank"
+
+                    class="
+
+                        px-6
+
+                        py-3
+
+                        rounded-lg
+
+                        border
+
+                        border-slate-300
+
+                        dark:border-slate-700
+
+                        font-semibold
+
+                        hover:border-accent
+
+                        hover:text-accent
+
+                        transition
+
+                    "
+
+                >
+
+                    View Academic CV →
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- QUICK FACTS -->
+
+
+            <div
+
+                class="
+
+                    mt-14
+
+                    grid
+
+                    grid-cols-1
+
+                    sm:grid-cols-3
+
+                    gap-8
+
+                    max-w-3xl
+
+                "
+
+            >
+
+
+                <div>
+
+
+                    <p class="text-2xl font-bold">
+
+                        M.Tech
+
+                    </p>
+
+
+                    <p
+
+                        class="
+
+                            mt-1
+
+                            text-sm
+
+                            text-slate-500
+
+                            dark:text-slate-400
+
+                        "
+
+                    >
+
+                        Energy Engineering
+
+                    </p>
+
+
+                </div>
+
+
+
+                <div>
+
+
+                    <p class="text-2xl font-bold">
+
+                        NIT Calicut
+
+                    </p>
+
+
+                    <p
+
+                        class="
+
+                            mt-1
+
+                            text-sm
+
+                            text-slate-500
+
+                            dark:text-slate-400
+
+                        "
+
+                    >
+
+                        2024 – 2026
+
+                    </p>
+
+
+                </div>
+
+
+
+                <div>
+
+
+                    <p class="text-2xl font-bold">
+
+                        Thermal
+
+                    </p>
+
+
+                    <p
+
+                        class="
+
+                            mt-1
+
+                            text-sm
+
+                            text-slate-500
+
+                            dark:text-slate-400
+
+                        "
+
+                    >
+
+                        Research Focus
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ============================================================
+
+     ABOUT
+
+     ============================================================ -->
+
+
+<section
+
+    id="about"
+
+    class="
+
+        py-24
+
+        bg-white
+
+        dark:bg-darkblue
+
+    "
+
+>
+
+
+    <div class="max-w-6xl mx-auto px-6">
+
+
+        <div class="max-w-3xl">
+
+
+            <p class="text-accent font-semibold text-sm tracking-widest">
+
+                ABOUT ME
+
+            </p>
+
+
+            <h2
+
+                class="
+
+                    mt-3
+
+                    text-3xl
+
+                    md:text-4xl
+
+                    font-bold
+
+                "
+
+            >
+
+                Building an engineering career through research.
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div
+
+            class="
+
+                mt-12
+
+                grid
+
+                md:grid-cols-2
+
+                gap-12
+
+                items-start
+
+            "
+
+        >
+
+
+            <!-- ABOUT TEXT -->
+
+
+            <div
+
+                class="
+
+                    text-slate-600
+
+                    dark:text-slate-400
+
+                    leading-8
+
+                "
+
+            >
+
+
+                <p>
+
+
+                    I am a Mechanical Engineering graduate with an
+
+                    M.Tech in Energy Engineering and Management from
+
+                    the National Institute of Technology Calicut.
+
+
+                </p>
+
+
+
+                <p class="mt-5">
+
+
+                    My academic work has focused on thermal engineering,
+
+                    heat transfer, experimental investigation and
+
+                    computational modelling. During my M.Tech, I worked
+
+                    on improving thermal retention in flat-plate solar
+
+                    collectors through a modified absorber–glazing
+
+                    cavity configuration.
+
+
+                </p>
+
+
+
+                <p class="mt-5">
+
+
+                    I am interested in pursuing advanced research where
+
+                    mechanical engineering, thermal sciences,
+
+                    computational methods and energy technologies
+
+                    intersect.
+
+
+                </p>
+
+
+
+                <p class="mt-5">
+
+
+                    I am particularly interested in opportunities for
+
+                    Master's, Ph.D., research assistantship and
+
+                    engineering research roles.
+
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- EDUCATION CARDS -->
+
+
+            <div class="space-y-5">
+
+
+
+                <div
+
+                    class="
+
+                        rounded-2xl
+
+                        border
+
+                        border-slate-200
+
+                        dark:border-slate-800
+
+                        p-6
+
+                        hover:border-sky-400/50
+
+                        transition
+
+                    "
+
+                >
+
+
+                    <p
+
+                        class="
+
+                            text-xs
+
+                            text-accent
+
+                            font-bold
+
+                            tracking-widest
+
+                        "
+
+                    >
+
+                        2024 – 2026
+
+                    </p>
+
+
+                    <h3
+
+                        class="
+
+                            mt-3
+
+                            text-xl
+
+                            font-bold
+
+                        "
+
+                    >
+
+                        M.Tech
+
+                    </h3>
+
+
+                    <p
+
+                        class="
+
+                            mt-1
+
+                            font-medium
+
+                        "
+
+                    >
+
+                        Energy Engineering & Management
+
+                    </p>
+
+
+                    <p
+
+                        class="
+
+                            mt-2
+
+                            text-sm
+
+                            text-slate-500
+
+                            dark:text-slate-400
+
+                        "
+
+                    >
+
+                        National Institute of Technology Calicut
+
+                    </p>
+
+
+                </div>
+
+
+
+                <div
+
+                    class="
+
+                        rounded-2xl
+
+                        border
+
+                        border-slate-200
+
+                        dark:border-slate-800
+
+                        p-6
+
+                        hover:border-sky-400/50
+
+                        transition
+
+                    "
+
+                >
+
+
+                    <p
+
+                        class="
+
+                            text-xs
+
+                            text-accent
+
+                            font-bold
+
+                            tracking-widest
+
+                        "
+
+                    >
+
+                        2020 – 2024
+
+                    </p>
+
+
+                    <h3
+
+                        class="
+
+                            mt-3
+
+                            text-xl
+
+                            font-bold
+
+                        "
+
+                    >
+
+                        B.Tech
+
+                    </h3>
+
+
+                    <p
+
+                        class="
+
+                            mt-1
+
+                            font-medium
+
+                        "
+
+                    >
+
+                        Mechanical Engineering
+
+                    </p>
+
+
+                    <p
+
+                        class="
+
+                            mt-2
+
+                            text-sm
+
+                            text-slate-500
+
+                            dark:text-slate-400
+
+                        "
+
+                    >
+
+                        College of Engineering Trivandrum
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ============================================================
+
+     RESEARCH
+
+     ============================================================ -->
+
+
+<section
+
+    id="research"
+
+    class="py-24"
+
+>
+
+
+    <div class="max-w-6xl mx-auto px-6">
+
+
+
+        <div class="max-w-3xl">
+
+
+            <p
+
+                class="
+
+                    text-accent
+
+                    font-semibold
+
+                    text-sm
+
+                    tracking-widest
+
+                "
+
+            >
+
+                RESEARCH
+
+            </p>
+
+
+            <h2
+
+                class="
+
+                    mt-3
+
+                    text-3xl
+
+                    md:text-4xl
+
+                    font-bold
+
+                "
+
+            >
+
+                Research interests and direction.
+
+            </h2>
+
+
+            <p
+
+                class="
+
+                    mt-5
+
+                    text-slate-600
+
+                    dark:text-slate-400
+
+                    leading-7
+
+                "
+
+            >
+
+
+                My research interests are centred around understanding
+
+                and improving thermal systems using a combination of
+
+                experimental investigation, numerical modelling and
+
+                engineering analysis.
+
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- RESEARCH AREAS -->
+
+
+        <div
+
+            class="
+
+                mt-12
+
+                grid
+
+                md:grid-cols-2
+
+                lg:grid-cols-4
+
+                gap-6
+
+            "
+
+        >
+
+
+
+            <!-- AREA 1 -->
+
+
+            <div
+
+                class="
+
+                    glass
+
+                    rounded-2xl
+
+                    p-6
+
+                    dark:bg-white/[0.03]
+
+                "
+
+            >
+
+
+                <div class="text-3xl text-accent">
+
+                    ∿
+
+                </div>
+
+
+                <h3 class="mt-5 text-lg font-bold">
+
+                    Heat Transfer
+
+                </h3>
+
+
+                <p
+
+                    class="
+
+                        mt-3
+
+                        text-sm
+
+                        leading-6
+
+                        text-slate-600
+
+                        dark:text-slate-400
+
+                    "
+
+                >
+
+                    Thermal transport, heat retention and
+
+                    heat-transfer enhancement.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- AREA 2 -->
+
+
+            <div
+
+                class="
+
+                    glass
+
+                    rounded-2xl
+
+                    p-6
+
+                    dark:bg-white/[0.03]
+
+                "
+
+            >
+
+
+                <div class="text-3xl text-accent">
+
+                    ◌
+
+                </div>
+
+
+                <h3 class="mt-5 text-lg font-bold">
+
+                    Thermal Systems
+
+                </h3>
+
+
+                <p
+
+                    class="
+
+                        mt-3
+
+                        text-sm
+
+                        leading-6
+
+                        text-slate-600
+
+                        dark:text-slate-400
+
+                    "
+
+                >
+
+                    Analysis and development of efficient
+
+                    thermal and energy systems.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- AREA 3 -->
+
+
+            <div
+
+                class="
+
+                    glass
+
+                    rounded-2xl
+
+                    p-6
+
+                    dark:bg-white/[0.03]
+
+                "
+
+            >
+
+
+                <div class="text-3xl text-accent">
+
+                    CFD
+
+                </div>
+
+
+                <h3 class="mt-5 text-lg font-bold">
+
+                    Computational Modelling
+
+                </h3>
+
+
+                <p
+
+                    class="
+
+                        mt-3
+
+                        text-sm
+
+                        leading-6
+
+                        text-slate-600
+
+                        dark:text-slate-400
+
+                    "
+
+                >
+
+                    CFD and numerical methods for thermal
+
+                    and fluid engineering problems.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- AREA 4 -->
+
+
+            <div
+
+                class="
+
+                    glass
+
+                    rounded-2xl
+
+                    p-6
+
+                    dark:bg-white/[0.03]
+
+                "
+
+            >
+
+
+                <div class="text-3xl text-accent">
+
+                    ☼
+
+                </div>
+
+
+                <h3 class="mt-5 text-lg font-bold">
+
+                    Renewable Energy
+
+                </h3>
+
+
+                <p
+
+                    class="
+
+                        mt-3
+
+                        text-sm
+
+                        leading-6
+
+                        text-slate-600
+
+                        dark:text-slate-400
+
+                    "
+
+                >
+
+                    Solar thermal systems and sustainable
+
+                    energy technologies.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- RESEARCH STATEMENT -->
+
+
+        <div
+
+            class="
+
+                mt-12
+
+                rounded-3xl
+
+                bg-slate-900
+
+                dark:bg-black
+
+                p-8
+
+                md:p-12
+
+                "
+
+        >
+
+
+            <p
+
+                class="
+
+                    text-accent
+
+                    text-sm
+
+                    font-bold
+
+                    tracking-widest
+
+                "
+
+            >
+
+                RESEARCH PHILOSOPHY
+
+            </p>
+
+
+            <blockquote
+
+                class="
+
+                    mt-5
+
+                    text-2xl
+
+                    md:text-3xl
+
+                    font-semibold
+
+                    leading-relaxed
+
+                    text-white
+
+                "
+
+            >
+
+
+                “I am interested in solving engineering problems
+
+                by connecting physical understanding, experimental
+
+                evidence and computational modelling.”
+
+
+            </blockquote>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ============================================================
+
+     PROJECTS
+
+     ============================================================ -->
+
+
+<section
+
+    id="projects"
+
+    class="
+
+        py-24
+
+        bg-white
+
+        dark:bg-darkblue
+
+    "
+
+>
+
+
+    <div class="max-w-6xl mx-auto px-6">
+
+
+
+        <div class="max-w-3xl">
+
+
+            <p
+
+                class="
+
+                    text-accent
+
+                    font-semibold
+
+                    text-sm
+
+                    tracking-widest
+
+                "
+
+            >
+
+                SELECTED PROJECTS
+
+            </p>
+
+
+            <h2
+
+                class="
+
+                    mt-3
+
+                    text-3xl
+
+                    md:text-4xl
+
+                    font-bold
+
+                "
+
+            >
+
+                Engineering work and research projects.
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div
+
+            class="
+
+                mt-12
+
+                grid
+
+                md:grid-cols-2
+
+                lg:grid-cols-3
+
+                gap-7
+
+            "
+
+        >
+
+
+
+            <!-- =================================================
+
+                 PROJECT 1
+
+                 ================================================= -->
+
+
+            <article
+
+                class="
+
+                    project-card
+
+                    rounded-2xl
+
+                    overflow-hidden
+
+                    border
+
+                    border-slate-200
+
+                    dark:border-slate-800
+
+                    bg-slate-50
+
+                    dark:bg-navy
+
+                "
+
+            >
+
+
+                <!-- PROJECT IMAGE -->
+
+
+                <div
+
+                    class="
+
+                        aspect-video
+
+                        bg-slate-200
+
+                        dark:bg-slate-800
+
+                        overflow-hidden
+
+                    "
+
+                >
+
+
+                    <img
+
+                        src="images/thesis.jpg"
+
+                        alt="Flat plate solar collector research"
+
+                        class="
+
+                            w-full
+
+                            h-full
+
+                            object-cover
+
+                        "
+
+                    >
+
+
+                </div>
+
+
+
+                <div class="p-6">
+
+
+                    <p
+
+                        class="
+
+                            text-xs
+
+                            text-accent
+
+                            font-bold
+
+                            tracking-widest
+
+                        "
+
+                    >
+
+                        M.TECH THESIS
+
+                    </p>
+
+
+                    <h3
+
+                        class="
+
+                            mt-3
+
+                            text-xl
+
+                            font-bold
+
+                        "
+
+                    >
+
+                        Thermal Retention in a Flat-Plate Solar Collector
+
+                    </h3>
+
+
+                    <p
+
+                        class="
+
+                            mt-4
+
+                            text-sm
+
+                            leading-6
+
+                            text-slate-600
+
+                            dark:text-slate-400
+
+                        "
+
+                    >
+
+
+                        Experimental and computational investigation
+
+                        of thermal retention in a flat-plate solar
+
+                        collector using a modified absorber–glazing
+
+                        cavity configuration.
+
+
+                    </p>
+
+
+
+                    <div
+
+                        class="
+
+                            mt-5
+
+                            flex
+
+                            flex-wrap
+
+                            gap-2
+
+                        "
+
+                    >
+
+
+                        <span class="tag">
+
+                            Heat Transfer
+
+                        </span>
+
+
+                        <span class="tag">
+
+                            CFD
+
+                        </span>
+
+
+                        <span class="tag">
+
+                            Experiment
+
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+
+            <!-- =================================================
+
+                 PROJECT 2
+
+                 ================================================= -->
+
+
+            <article
+
+                class="
+
+                    project-card
+
+                    rounded-2xl
+
+                    overflow-hidden
+
+                    border
+
+                    border-slate-200
+
+                    dark:border-slate-800
+
+                    bg-slate-50
+
+                    dark:bg-navy
+
+                "
+
+            >
+
+
+                <div
+
+                    class="
+
+                        aspect-video
+
+                        bg-slate-200
+
+                        dark:bg-slate-800
+
+                        overflow-hidden
+
+                    "
+
+                >
+
+
+                    <img
+
+                        src="images/cryogenic.jpg"
+
+                        alt="Cryogenic materials research"
+
+                        class="
+
+                            w-full
+
+                            h-full
+
+                            object-cover
+
+                        "
+
+                    >
+
+
+                </div>
+
+
+
+                <div class="p-6">
+
+
+                    <p
+
+                        class="
+
+                            text-xs
+
+                            text-accent
+
+                            font-bold
+
+                            tracking-widest
+
+                        "
+
+                    >
+
+                        RESEARCH PROJECT
+
+                    </p>
+
+
+                    <h3
+
+                        class="
+
+                            mt-3
+
+                            text-xl
+
+                            font-bold
+
+                        "
+
+                    >
+
+                        Thermal Contraction of Engineering Materials
+
+                    </h3>
+
+
+                    <p
+
+                        class="
+
+                            mt-4
+
+                            text-sm
+
+                            leading-6
+
+                            text-slate-600
+
+                            dark:text-slate-400
+
+                        "
+
+                    >
+
+
+                        Comparative analysis of thermal contraction
+
+                        and differential dimensional changes of
+
+                        engineering materials for cryogenic applications.
+
+
+                    </p>
+
+
+
+                    <div
+
+                        class="
+
+                            mt-5
+
+                            flex
+
+                            flex-wrap
+
+                            gap-2
+
+                        "
+
+                    >
+
+
+                        <span class="tag">
+
+                            Cryogenics
+
+                        </span>
+
+
+                        <span class="tag">
+
+                            Materials
+
+                        </span>
+
+
+                        <span class="tag">
+
+                            Python
+
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+
+            <!-- =================================================
+
+                 PROJECT 3
+
+                 ================================================= -->
+
+
+            <article
+
+                class="
+
+                    project-card
+
+                    rounded-2xl
+
+                    overflow-hidden
+
+                    border
+
+                    border-slate-200
+
+                    dark:border-slate-800
+
+                    bg-slate-50
+
+                    dark:bg-navy
+
+                "
+
+            >
+
+
+                <div
+
+                    class="
+
+                        aspect-video
+
+                        bg-slate-200
+
+                        dark:bg-slate-800
+
+                        overflow-hidden
+
+                    "
+
+                >
+
+
+                    <img
+
+                        src="images/kart.jpg"
+
+                        alt="Mechanical kart design project"
+
+                        class="
+
+                            w-full
+
+                            h-full
+
+                            object-cover
+
+                        "
+
+                    >
+
+
+                </div>
+
+
+
+                <div class="p-6">
+
+
+                    <p
+
+                        class="
+
+                            text-xs
+
+                            text-accent
+
+                            font-bold
+
+                            tracking-widest
+
+                        "
+
+                    >
+
+                        MECHANICAL DESIGN
+
+                    </p>
+
+
+                    <h3
+
+                        class="
+
+                            mt-3
+
+                            text-xl
+
+                            font-bold
+
+                        "
+
+                    >
+
+                        Kart Design & Development
+
+                    </h3>
+
+
+                    <p
+
+                        class="
+
+                            mt-4
+
+                            text-sm
+
+                            leading-6
+
+                            text-slate-600
+
+                            dark:text-slate-400
+
+                        "
+
+                    >
+
+
+                        Mechanical design and development involving
+
+                        vehicle systems, component design,
+
+                        engineering analysis and manufacturing.
+
+
+                    </p>
+
+
+
+                    <div
+
+                        class="
+
+                            mt-5
+
+                            flex
+
+                            flex-wrap
+
+                            gap-2
+
+                        "
+
+                    >
+
+
+                        <span class="tag">
+
+                            CAD
+
+                        </span>
+
+
+                        <span class="tag">
+
+                            Design
+
+                        </span>
+
+
+                        <span class="tag">
+
+                            Manufacturing
+
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ============================================================
+
+     SKILLS
+
+     ============================================================ -->
+
+
+<section
+
+    id="skills"
+
+    class="py-24"
+
+>
+
+
+    <div class="max-w-6xl mx-auto px-6">
+
+
+
+        <p
+
+            class="
+
+                text-accent
+
+                font-semibold
+
+                text-sm
+
+                tracking-widest
+
+            "
+
+        >
+
+            TECHNICAL SKILLS
+
+        </p>
+
+
+
+        <h2
+
+            class="
+
+                mt-3
+
+                text-3xl
+
+                md:text-4xl
+
+                font-bold
+
+            "
+
+        >
+
+            Engineering tools and capabilities.
+
+        </h2>
+
+
+
+        <div
+
+            class="
+
+                mt-12
+
+                grid
+
+                sm:grid-cols-2
+
+                lg:grid-cols-4
+
+                gap-6
+
+            "
+
+        >
+
+
+
+            <!-- CAD -->
+
+
+            <div
+
+                class="
+
+                    rounded-2xl
+
+                    border
+
+                    border-slate-200
+
+                    dark:border-slate-800
+
+                    p-6
+
+                "
+
+            >
+
+
+                <div class="text-3xl text-accent">
+
+                    ◇
+
+                </div>
+
+
+                <h3
+
+                    class="
+
+                        mt-5
+
+                        text-lg
+
+                        font-bold
+
+                    "
+
+                >
+
+                    CAD & Design
+
+                </h3>
+
+
+                <ul
+
+                    class="
+
+                        mt-4
+
+                        space-y-3
+
+                        text-sm
+
+                        text-slate-600
+
+                        dark:text-slate-400
+
+                    "
+
+                >
+
+
+                    <li>SolidWorks</li>
+
+
+                    <li>Mechanical Design</li>
+
+
+                    <li>Technical Drawings</li>
+
+
+                    <li>GD&T Fundamentals</li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+            <!-- CFD -->
+
+
+            <div
+
+                class="
+
+                    rounded-2xl
+
+                    border
+
+                    border-slate-200
+
+                    dark:border-slate-800
+
+                    p-6
+
+                "
+
+            >
+
+
+                <div class="text-3xl text-accent">
+
+                    ∿
+
+                </div>
+
+
+                <h3
+
+                    class="
+
+                        mt-5
+
+                        text-lg
+
+                        font-bold
+
+                    "
+
+                >
+
+                    Simulation
+
+                </h3>
+
+
+                <ul
+
+                    class="
+
+                        mt-4
+
+                        space-y-3
+
+                        text-sm
+
+                        text-slate-600
+
+                        dark:text-slate-400
+
+                    "
+
+                >
+
+
+                    <li>ANSYS Fluent</li>
+
+
+                    <li>Computational Fluid Dynamics</li>
+
+
+                    <li>Thermal Analysis</li>
+
+
+                    <li>FEA Fundamentals</li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+            <!-- COMPUTATIONAL -->
+
+
+            <div
+
+                class="
+
+                    rounded-2xl
+
+                    border
+
+                    border-slate-200
+
+                    dark:border-slate-800
+
+                    p-6
+
+                "
+
+            >
+
+
+                <div class="text-3xl text-accent">
+
+                    &lt;/&gt;
+
+                </div>
+
+
+                <h3
+
+                    class="
+
+                        mt-5
+
+                        text-lg
+
+                        font-bold
+
+                    "
+
+                >
+
+                    Computational
+
+                </h3>
+
+
+                <ul
+
+                    class="
+
+                        mt-4
+
+                        space-y-3
+
+                        text-sm
+
+                        text-slate-600
+
+                        dark:text-slate-400
+
+                    "
+
+                >
+
+
+                    <li>Python</li>
+
+
+                    <li>MATLAB</li>
+
+
+                    <li>Numerical Methods</li>
+
+
+                    <li>Engineering Data Analysis</li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+            <!-- CORE -->
+
+
+            <div
+
+                class="
+
+                    rounded-2xl
+
+                    border
+
+                    border-slate-200
+
+                    dark:border-slate-800
+
+                    p-6
+
+                "
+
+            >
+
+
+                <div class="text-3xl text-accent">
+
+                    ⚙
+
+                </div>
+
+
+                <h3
+
+                    class="
+
+                        mt-5
+
+                        text-lg
+
+                        font-bold
+
+                    "
+
+                >
+
+                    Core Engineering
+
+                </h3>
+
+
+                <ul
+
+                    class="
+
+                        mt-4
+
+                        space-y-3
+
+                        text-sm
+
+                        text-slate-600
+
+                        dark:text-slate-400
+
+                    "
+
+                >
+
+
+                    <li>Heat Transfer</li>
+
+
+                    <li>Thermodynamics</li>
+
+
+                    <li>Fluid Mechanics</li>
+
+
+                    <li>Experimental Methods</li>
+
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ============================================================
+
+     EXPERIENCE / ACADEMIC ACTIVITIES
+
+     ============================================================ -->
+
+
+<section
+
+    class="
+
+        py-24
+
+        bg-white
+
+        dark:bg-darkblue
+
+    "
+
+>
+
+
+    <div class="max-w-6xl mx-auto px-6">
+
+
+
+        <p
+
+            class="
+
+                text-accent
+
+                font-semibold
+
+                text-sm
+
+                tracking-widest
+
+            "
+
+        >
+
+            ACADEMIC EXPERIENCE
+
+        </p>
+
+
+
+        <h2
+
+            class="
+
+                mt-3
+
+                text-3xl
+
+                md:text-4xl
+
+                font-bold
+
+            "
+
+        >
+
+            Beyond coursework.
+
+        </h2>
+
+
+
+        <div
+
+            class="
+
+                mt-12
+
+                grid
+
+                md:grid-cols-2
+
+                gap-8
+
+            "
+
+        >
+
+
+
+            <!-- TEACHING -->
+
+
+            <div
+
+                class="
+
+                    rounded-2xl
+
+                    border
+
+                    border-slate-200
+
+                    dark:border-slate-800
+
+                    p-7
+
+                "
+
+            >
+
+
+                <p class="text-accent font-bold text-sm">
+
+                    TEACHING ASSISTANT
+
+                </p>
+
+
+                <h3
+
+                    class="
+
+                        mt-3
+
+                        text-xl
+
+                        font-bold
+
+                    "
+
+                >
+
+                    Fluid Mechanics & Heat Transfer
+
+                </h3>
+
+
+                <p
+
+                    class="
+
+                        mt-3
+
+                        text-sm
+
+                        leading-6
+
+                        text-slate-600
+
+                        dark:text-slate-400
+
+                    "
+
+                >
+
+
+                    Teaching assistance for laboratory and academic
+
+                    activities in Fluid Mechanics, Heat Transfer and
+
+                    Engineering Graphics.
+
+
+                </p>
+
+
+                <p
+
+                    class="
+
+                        mt-4
+
+                        text-sm
+
+                        text-slate-500
+
+                    "
+
+                >
+
+                    NIT Calicut • 2025–2026
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- PROJECT EXPERIENCE -->
+
+
+            <div
+
+                class="
+
+                    rounded-2xl
+
+                    border
+
+                    border-slate-200
+
+                    dark:border-slate-800
+
+                    p-7
+
+                "
+
+            >
+
+
+                <p class="text-accent font-bold text-sm">
+
+                    ENGINEERING PROJECTS
+
+                </p>
+
+
+                <h3
+
+                    class="
+
+                        mt-3
+
+                        text-xl
+
+                        font-bold
+
+                    "
+
+                >
+
+                    Design, Analysis & Prototyping
+
+                </h3>
+
+
+                <p
+
+                    class="
+
+                        mt-3
+
+                        text-sm
+
+                        leading-6
+
+                        text-slate-600
+
+                        dark:text-slate-400
+
+                    "
+
+                >
+
+
+                    Experience across mechanical design, vehicle
+
+                    systems, refrigeration, renewable-energy concepts,
+
+                    prototyping and engineering analysis.
+
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ============================================================
+
+     CV / ACADEMIC PROFILE
+
+     ============================================================ -->
+
+
+<section class="py-24">
+
+
+    <div class="max-w-6xl mx-auto px-6">
+
+
+        <div
+
+            class="
+
+                rounded-3xl
+
+                bg-slate-900
+
+                dark:bg-black
+
+                p-8
+
+                md:p-12
+
+                flex
+
+                flex-col
+
+                md:flex-row
+
+                items-center
+
+                justify-between
+
+                gap-8
+
+            "
+
+        >
+
+
+            <div>
+
+
+                <p
+
+                    class="
+
+                        text-accent
+
+                        text-sm
+
+                        font-bold
+
+                        tracking-widest
+
+                    "
+
+                >
+
+                    ACADEMIC PROFILE
+
+                </p>
+
+
+                <h2
+
+                    class="
+
+                        mt-3
+
+                        text-3xl
+
+                        md:text-4xl
+
+                        font-bold
+
+                        text-white
+
+                    "
+
+                >
+
+                    Interested in my academic background?
+
+                </h2>
+
+
+                <p
+
+                    class="
+
+                        mt-4
+
+                        max-w-xl
+
+                        text-slate-400
+
+                        leading-7
+
+                    "
+
+                >
+
+
+                    My academic CV contains detailed information
+
+                    about my education, research, projects,
+
+                    technical skills and academic activities.
+
+
+                </p>
+
+
+            </div>
+
+
+
+            <a
+
+                href="CV.pdf"
+
+                target="_blank"
+
+                class="
+
+                    shrink-0
+
+                    px-7
+
+                    py-4
+
+                    rounded-xl
+
+                    bg-sky-500
+
+                    text-white
+
+                    font-bold
+
+                    hover:bg-sky-400
+
+                    transition
+
+                "
+
+            >
+
+                Open Academic CV →
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ============================================================
+
+     CONTACT
+
+     ============================================================ -->
+
+
+<section
+
+    id="contact"
+
+    class="
+
+        py-24
+
+        bg-white
+
+        dark:bg-darkblue
+
+    "
+
+>
+
+
+    <div
+
+        class="
+
+            max-w-4xl
+
+            mx-auto
+
+            px-6
+
+            text-center
+
+        "
+
+    >
+
+
+        <p
+
+            class="
+
+                text-accent
+
+                font-semibold
+
+                text-sm
+
+                tracking-widest
+
+            "
+
+        >
+
+            CONTACT
+
+        </p>
+
+
+
+        <h2
+
+            class="
+
+                mt-3
+
+                text-4xl
+
+                md:text-5xl
+
+                font-bold
+
+            "
+
+        >
+
+            Let's connect.
+
+        </h2>
+
+
+
+        <p
+
+            class="
+
+                mt-6
+
+                max-w-2xl
+
+                mx-auto
+
+                text-slate-600
+
+                dark:text-slate-400
+
+                leading-7
+
+            "
+
+        >
+
+
+            I am interested in graduate research opportunities,
+
+            Ph.D. programs, research assistantships and
+
+            multidisciplinary engineering research.
+
+
+        </p>
+
+
+
+        <!-- CONTACT BUTTONS -->
+
+
+        <div
+
+            class="
+
+                mt-10
+
+                flex
+
+                flex-wrap
+
+                justify-center
+
+                gap-4
+
+            "
+
+        >
+
+
+            <!-- REPLACE EMAIL -->
+
+
+            <a
+
+                href="mailto:your.email@example.com"
+
+                class="
+
+                    px-6
+
+                    py-3
+
+                    rounded-lg
+
+                    bg-sky-500
+
+                    text-white
+
+                    font-semibold
+
+                    hover:bg-sky-400
+
+                    transition
+
+                "
+
+            >
+
+                Email Me
+
+            </a>
+
+
+
+            <!-- REPLACE LINKEDIN URL -->
+
+
+            <a
+
+                href="https://www.linkedin.com/"
+
+                target="_blank"
+
+                rel="noopener noreferrer"
+
+                class="
+
+                    px-6
+
+                    py-3
+
+                    rounded-lg
+
+                    border
+
+                    border-slate-300
+
+                    dark:border-slate-700
+
+                    font-semibold
+
+                    hover:text-accent
+
+                    hover:border-accent
+
+                    transition
+
+                "
+
+            >
+
+                LinkedIn
+
+            </a>
+
+
+
+            <!-- REPLACE GITHUB URL -->
+
+
+            <a
+
+                href="https://github.com/"
+
+                target="_blank"
+
+                rel="noopener noreferrer"
+
+                class="
+
+                    px-6
+
+                    py-3
+
+                    rounded-lg
+
+                    border
+
+                    border-slate-300
+
+                    dark:border-slate-700
+
+                    font-semibold
+
+                    hover:text-accent
+
+                    hover:border-accent
+
+                    transition
+
+                "
+
+            >
+
+                GitHub
+
+            </a>
+
+
+
+            <!-- REPLACE GOOGLE SCHOLAR URL -->
+
+
+            <a
+
+                href="#"
+
+                target="_blank"
+
+                rel="noopener noreferrer"
+
+                class="
+
+                    px-6
+
+                    py-3
+
+                    rounded-lg
+
+                    border
+
+                    border-slate-300
+
+                    dark:border-slate-700
+
+                    font-semibold
+
+                    hover:text-accent
+
+                    hover:border-accent
+
+                    transition
+
+                "
+
+            >
+
+                Google Scholar
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- EMAIL DISPLAY -->
+
+
+        <div
+
+            class="
+
+                mt-10
+
+                text-sm
+
+                text-slate-500
+
+                dark:text-slate-400
+
+            "
+
+        >
+
+
+            Email:
+
+            <a
+
+                href="mailto:your.email@example.com"
+
+                class="text-accent hover:underline"
+
+            >
+
+                your.email@example.com
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ============================================================
+
+     FOOTER
+
+     ============================================================ -->
+
+
+<footer
+
+    class="
+
+        border-t
+
+        border-slate-200
+
+        dark:border-slate-800
+
+    "
+
+>
+
+
+    <div
+
+        class="
+
+            max-w-6xl
+
+            mx-auto
+
+            px-6
+
+            py-8
+
+            flex
+
+            flex-col
+
+            md:flex-row
+
+            justify-between
+
+            gap-4
+
+            text-sm
+
+            text-slate-500
+
+        "
+
+    >
+
+
+        <p>
+
+            © 2026 Vijitha V.
+
+        </p>
+
+
+        <p>
+
+            Mechanical Engineering • Research • Innovation
+
+        </p>
+
+
+    </div>
+
+
+</footer>
+
+
+
+
+<!-- ============================================================
+
+     JAVASCRIPT
+
+     ============================================================ -->
+
+
+<script>
+
+
+
+    /* =========================================================
+
+       DARK / LIGHT MODE
+
+       ========================================================= */
+
+
+    const themeToggle =
+
+        document.getElementById("themeToggle");
+
+
+
+    /*
+
+       Load previously saved theme.
+
+    */
+
+
+    if (
+
+        localStorage.getItem("theme") === "dark" ||
+
+        (
+
+            !localStorage.getItem("theme") &&
+
+            window.matchMedia(
+
+                "(prefers-color-scheme: dark)"
+
+            ).matches
+
+        )
+
+    ) {
+
+
+        document.documentElement.classList.add("dark");
+
+
+    }
+
+
+
+    /*
+
+       Toggle theme.
+
+    */
+
+
+    themeToggle.addEventListener("click", function () {
+
+
+        document.documentElement.classList.toggle("dark");
+
+
+
+        if (
+
+            document.documentElement.classList.contains("dark")
+
+        ) {
+
+
+            localStorage.setItem("theme", "dark");
+
+
+        } else {
+
+
+            localStorage.setItem("theme", "light");
+
+
+        }
+
+
+    });
+
+
+
+
+    /* =========================================================
+
+       MOBILE MENU
+
+       ========================================================= */
+
+
+    const mobileMenuButton =
+
+        document.getElementById("mobileMenuButton");
+
+
+    const mobileMenu =
+
+        document.getElementById("mobileMenu");
+
+
+
+    mobileMenuButton.addEventListener("click", function () {
+
+
+        mobileMenu.classList.toggle("hidden");
+
+
+    });
+
+
+
+    /*
+
+       Close mobile menu when a link is clicked.
+
+    */
+
+
+    const mobileLinks =
+
+        mobileMenu.querySelectorAll("a");
+
+
+
+    mobileLinks.forEach(function (link) {
+
+
+        link.addEventListener("click", function () {
+
+
+            mobileMenu.classList.add("hidden");
+
+
+        });
+
+
+    });
+
+
+
+
+    /* =========================================================
+
+       ADD TAG STYLING
+
+       ========================================================= */
+
+
+    const tags =
+
+        document.querySelectorAll(".tag");
+
+
+
+    tags.forEach(function (tag) {
+
+
+        tag.className +=
+
+            " text-xs px-3 py-1 rounded-full bg-sky-500/10 text-accent";
+
+
+    });
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
+
+
